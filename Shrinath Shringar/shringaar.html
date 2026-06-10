@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+body{background:#fffaf0;font-family:sans-serif;padding:30px;max-width:600px;margin:0 auto;}
+h2,h3{color:#800020;}
+.product-box{background:#fff;padding:15px;max-width:600px;border-radius:8px;border:1px solid#ddd;margin-bottom:20px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+button{background-color:#800020;color:white;padding:8px 15px;margin-top:10px;border-radius:4px;border:none;cursor:pointer;}
+button:hover{background-color:#a00028}
+</style>
+    <title>Shrinath Shringar</title>
+</head>
+<body>
+    <header>
+         <h2>✨ Shrinath Shringar ✨</h2>
+         <p>Laddu Gopal Ji & Thakur Ji Shringar Store</p>
+    </header>
+    
+    <div class="product box">
+        <h3>Laddu Gopal Ji Shringar Set</h3>
+        <img src="poshak.jpg" alt="poshak" style="width:100%;max-width:200px;height:auto;border-radius:4px;margin:10px 0;display:block;">
+        <p>Beautiful Poshak
+        <label>Choose Color:</label>
+        <select id="poshak-variant">
+            <option value="Red Poshak">Special Red Poshak (&#8377 299)</option>
+            <option value="Yellow Poshak">Royal Yellow Poshak (&#8377 299)</option>
+            <option value="Blue Poshak">Janmasthami Blue (&#8377 399)</option>
+            <option value="Green Poshak">Morpank Poshak (&#8377 499)</option>
+            <option value="Diamond Poshak">kohinoor Poshak (&#8377 999)</option>
+        </select>
+        </p>
+        <button id="addBtn">Add Poshak To Cart</button>
+     </div>
+     
+     <div class="product box">
+         <h3>Thakur Ji Mukut</h3>
+         <img src="mukut.jpg" alt="mukut" style="width:100%;max-width:200px;height:auto;border-radius:4px;margin:10px 0;display:block;">
+         <p>Full Zari & Diamond Work Mukut</p>
+         <p>Price: &#8377;150</p>
+         <button onclick="buy('Mukut')">Add Mukut To Cart</button>
+     </div>
+
+     <div class="product box">
+         <h3>Beautiful Mala Set</h3>
+         <img src="mala.jpg" alt="mala" style="width:100%;max-width:200px;height:auto;border-radius:4px;margin:10px 0;display:block;">
+         <p>Pearl & Stone Mala for Laddu Gopal</p>
+         <p>Price: &#8377;120</p>
+         <button onclick="buy('Mala Set',120)">Add Mala To Cart</button>
+     </div>
+
+     <div class="product box">
+         <h3>Ashtagandha Chandan</h3>
+         <img src="chandan.jpg" alt="chandan" style="width:100%;max-width:200px;height:auto;border-radius:4px;margin:10px 0;display:block;">
+         <p>Pure Sugandit Chandan Tika</p>
+         <p>Price: &#8377;50</p>
+         <button onclick="buy('Chandan')">Add Chandan To Cart</button>
+     </div>
+ <script>
+     function buy (itemname,price) {
+             let hindiPrefix="\u0915\u093e\u0930\u094d\u0914\u092e\u0947\u0902\u091c\u094b\u0921\uo93c\u093e\u0917\u092f\u093e:";
+             alert(hindiPrefix+itemname+"(Rs."+price+")");}
+     </script>
+</body>
+</html>
+      
